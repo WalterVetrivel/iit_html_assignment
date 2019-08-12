@@ -43,15 +43,43 @@
 					<li class="nav-item">
 						<a href="../index.html" class="nav-link">Home</a>
 					</li>
+
 					<li class="nav-item">
-						<a href="#" class="nav-link active">
+						<a class="nav-link dropdown-toggle active">
 							Christian Doctrine&nbsp;<i class="fas fa-chevron-down"></i>
 						</a>
+
+						<div class="nav-dropdown">
+							<ul class="dropdown-items">
+								<li class="dropdown-item">
+									<a href="god.html" class="dropdown-link nav-link">
+										Who is God?
+									</a>
+								</li>
+
+								<li class="dropdown-item">
+									<a href="salvation.html" class="dropdown-link nav-link">
+										How to be saved?
+									</a>
+								</li>
+
+								<li class="dropdown-item">
+									<a href="life.html" class="dropdown-link nav-link active">
+										Christian living
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
+
 					<li class="nav-item">
-						<a href="pages/resources.html" class="nav-link">Resources</a>
+						<a href="resources.html" class="nav-link">Resources</a>
 					</li>
 				</ul>
+
+				<button class="nav-toggle">
+					<i class="fas fa-bars"></i>
+				</button>
 			</nav>
 			<!-- END NAVIGATION -->
 		</header>
@@ -148,5 +176,9 @@
 			</p>
 		</footer>
 		<!-- END FOOTER -->
+
+		<!-- SCRIPTS -->
+		<script src="../js/main.js"></script>
+		<!-- END SCRIPTS -->
 	</body>
 </html>
