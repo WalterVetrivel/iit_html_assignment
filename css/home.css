@@ -17,9 +17,9 @@
 }
 
 .header-content {
-	position: absolute;
-	top: 25%;
-	left: 10%;
+	padding: 2rem;
+	margin-left: 10%;
+	margin-top: 5%;
 }
 
 .site-heading {
@@ -48,6 +48,7 @@
 
 .intro-text {
 	width: 100%;
+	text-align: left;
 	margin-right: 2rem;
 	margin-bottom: 2rem;
 }
