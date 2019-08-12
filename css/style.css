@@ -1,0 +1,246 @@
+/* ALL CODE IS WRITTEN BY WALTER VETRIVEL SELVAKUMAR */
+/* GENERAL STYLES FOR ALL PAGES */
+/* 
+	COLOR PALETTE:
+	#8fb9a8
+	#fefad4
+	#fcd0ba
+	#f1828d
+	#765d69
+*/
+
+/* GLOBAL RESET */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* BODY FONT */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #765d69;
+	line-height: 1.55;
+}
+
+/* NAVIGATION */
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 1rem;
+	background-color: rgba(255, 255, 255, 0.85);
+	border-bottom: 2px solid #85b9a8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+	flex-wrap: wrap;
+	z-index: 999;
+}
+
+.nav-brand {
+	padding: 0.5rem;
+	text-decoration: none;
+	color: #8fb9a8;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.nav-items {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.nav-item {
+	padding: 0.5rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	color: #765d69;
+}
+
+.nav-link::after {
+	content: '';
+	display: block;
+	height: 3px;
+	background-color: #f1828d;
+	width: 0%;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active {
+	color: #85b9a8;
+	font-weight: 700;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+	width: 100%;
+}
+
+.nav-brand .fas {
+	margin-right: 0.5rem;
+}
+
+/* HEADER */
+.header {
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 6rem;
+}
+
+/* SECTION */
+.section {
+	padding: 3.5rem 5rem;
+}
+
+.section-heading {
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: 'Roboto Slab', sans-serif;
+	color: #8fb9a8;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-heading::before,
+.section-heading::after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 50%;
+	background-color: #85b9a8;
+}
+
+/* GENERAL TEXT */
+.paragraph {
+	margin-bottom: 1rem;
+}
+
+.verse {
+	font-weight: 700;
+	font-style: italic;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.page-link {
+	text-decoration: none;
+	color: #f1828d;
+}
+
+.side-heading {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.05rem;
+	margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+	background-color: #765d69;
+	padding: 2rem;
+}
+
+.footer .side-heading {
+	color: #fcd0ba;
+}
+
+.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #fefad4;
+}
+
+.site-map,
+.external-resources {
+	width: 100%;
+}
+
+.site-map {
+	margin-bottom: 1rem;
+}
+
+.site-map ul {
+	margin-left: 1rem;
+	list-style: none;
+	color: #fefad4;
+}
+
+.footer-link {
+	color: #fefad4;
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 0.25rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.footer-link i {
+	color: inherit;
+	margin-right: 0.25rem;
+}
+
+.footer-link:hover {
+	color: #fcd0ba;
+}
+
+.footer-copyright {
+	padding: 0 2rem;
+	color: #fcd0ba;
+	text-align: center;
+}
+
+.copyright-link {
+	text-decoration: none;
+	color: #f1828d;
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+}
+
+.copyright-link:hover {
+	filter: brightness(1.15);
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 640px) {
+	.site-map,
+	.external-resources {
+		width: 50%;
+	}
+
+	.site-map {
+		margin-bottom: 0;
+	}
+}
+
