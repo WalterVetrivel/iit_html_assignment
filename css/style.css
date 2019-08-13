@@ -231,11 +231,14 @@ body {
 
 .footer .side-heading {
 	font-family: 'Roboto Slab', sans-serif;
+	text-align: center;
 	color: #fcd0ba;
 }
 
 .footer-links {
 	display: flex;
+	justify-content: space-between;
+	width: 100%;
 	flex-wrap: wrap;
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -247,7 +250,8 @@ body {
 	width: 100%;
 }
 
-.site-map {
+.site-map,
+.external-resources {
 	margin-bottom: 1rem;
 }
 
@@ -263,6 +267,10 @@ body {
 	display: inline-block;
 	margin-bottom: 0.25rem;
 	transition: all 0.3s ease-in-out;
+}
+
+.footer-text {
+	color: #fefad4;
 }
 
 .footer-link i {
@@ -312,9 +320,14 @@ body {
 		display: none;
 	}
 
+	.footer-links .side-heading {
+		text-align: left;
+	}
+
 	.site-map,
-	.external-resources {
-		width: 50%;
+	.external-resources,
+	.other {
+		width: 32%;
 	}
 
 	.site-map {

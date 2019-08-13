@@ -21,11 +21,22 @@
 
 /* BLOG CARD STYLES */
 .blog-card {
-	background-color: #fefad4;
+	background-image: linear-gradient(
+			rgba(254, 250, 212, 0.9),
+			rgba(254, 250, 212, 0.9)
+		),
+		url(../img/blog.jpg);
+	background-size: cover;
+	background-position: center;
 	padding: 2rem;
 	margin-top: 2rem;
 	text-align: center;
 	margin-bottom: 2rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 
 .blog-img {
