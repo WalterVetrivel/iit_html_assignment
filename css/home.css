@@ -10,7 +10,7 @@
 
 /* LANDING SECTION */
 #landing {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url(../img/home-bg.jpg);
 	position: relative;
 	min-height: 100vh;

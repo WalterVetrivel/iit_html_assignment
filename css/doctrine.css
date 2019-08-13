@@ -13,3 +13,50 @@
 .header-content {
 	padding: 2rem;
 }
+
+/* ARTICLE */
+.article {
+	padding: 3rem;
+}
+
+.article-heading {
+	font-family: 'Roboto Slab', sans-serif;
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: #8fb9a8;
+	border-bottom: 1px solid #8fb9a8;
+}
+
+.article-subheading {
+	font-family: 'Roboto Slab', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+	color: #f1828d;
+}
+
+.article-section {
+	padding: 0.5rem 0;
+}
+
+/* SUMMARY */
+.summary-list {
+	margin-left: 1rem;
+}
+
+.summary-list li {
+	margin-bottom: 0.25rem;
+}
+
+.summary-list ol {
+	margin-top: 0.5rem;
+	margin-left: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1024px) {
+	.article {
+		padding: 3.5rem 5rem;
+	}
+}
