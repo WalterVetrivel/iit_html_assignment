@@ -209,7 +209,6 @@ body {
 	font-weight: 700;
 	font-style: italic;
 	margin-bottom: 1rem;
-	text-align: center;
 }
 
 .page-link {
@@ -326,6 +325,10 @@ body {
 @media only screen and (min-width: 1024px) {
 	.section {
 		padding: 3.5rem 5rem;
+	}
+
+	.verse {
+		text-align: center;
 	}
 }
 

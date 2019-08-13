@@ -59,6 +59,14 @@
 	border: 2px solid #fff;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 	transform: rotate(-2deg);
+	filter: brightness(0.9);
+	transition: all 0.3s ease-in-out;
+}
+
+.intro-img:hover {
+	transform: rotate(0) scale(1.02);
+	filter: brightness(1);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 
 /* VALUES SECTION */
@@ -100,7 +108,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
+	align-items: stretch;
 	margin-top: 2rem;
 }
 
@@ -108,6 +116,7 @@
 	width: 100%;
 	margin-bottom: 1rem;
 	transition: all 0.3s ease-in-out;
+	overflow: hidden;
 }
 
 .card:hover {
@@ -198,10 +207,6 @@
 	.card {
 		width: 45%;
 	}
-
-	.card:nth-of-type(2) {
-		order: 2;
-	}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -228,10 +233,6 @@
 
 @media only screen and (min-width: 1280px) {
 	.card {
-		width: 30%;
-	}
-
-	.card:nth-of-type(2) {
-		order: 0;
+		width: 24.5%;
 	}
 }
