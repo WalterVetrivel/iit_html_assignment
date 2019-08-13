@@ -36,6 +36,7 @@
 }
 
 .blog-card:hover {
+	transform: translate(1px, -1px);
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 
@@ -97,6 +98,7 @@
 	width: 100%;
 	border-spacing: 0;
 	overflow-x: scroll;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
 }
 
 .songs-table th {
@@ -104,6 +106,16 @@
 	color: #fefad4;
 	text-transform: uppercase;
 	font-weight: normal;
+}
+
+.songs-table tbody tr {
+	transition: all 0.3s ease-in-out;
+}
+
+.songs-table tbody tr:hover {
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+	transform: translate(2px, -1px);
+	filter: brightness(1.05);
 }
 
 .songs-table th,
@@ -115,12 +127,20 @@
 	background-color: #fcd0ba;
 }
 
+.songs-table tr:nth-of-type(even) {
+	background-color: #fefad4;
+}
+
 .s-no {
 	text-align: right;
 }
 
 .embed {
 	text-align: center;
+}
+
+.embed iframe {
+	display: none;
 }
 
 /* MEDIA QUERIES */
@@ -139,5 +159,15 @@
 	.blog-card {
 		width: 80%;
 		margin: 2rem auto;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.embed iframe {
+		display: inline-block;
+	}
+
+	.embed a {
+		display: none;
 	}
 }

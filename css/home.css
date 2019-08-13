@@ -48,7 +48,7 @@
 
 .intro-text {
 	width: 100%;
-	text-align: left;
+	text-align: justify;
 	margin-right: 2rem;
 	margin-bottom: 2rem;
 }
@@ -121,7 +121,7 @@
 
 .card:hover {
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
-	transform: scale(1.02);
+	transform: scale(1.02) translate(1px, -1px);
 }
 
 .card-img {
@@ -146,6 +146,10 @@
 	text-transform: uppercase;
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
+}
+
+.card-text {
+	text-align: justify;
 }
 
 .card-footer {
