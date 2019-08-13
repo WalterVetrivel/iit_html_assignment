@@ -1,0 +1,132 @@
+/* ALL CODE IS WRITTEN BY WALTER VETRIVEL SELVAKUMAR */
+/* STYLES FOR THE RESOURCES PAGE */
+/* 
+	COLOR PALETTE:
+	#8fb9a8
+	#fefad4
+	#fcd0ba
+	#f1828d
+	#765d69
+*/
+
+/* HEADER STYLES */
+#landing {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/resources-bg.jpg);
+}
+
+.header-content {
+	padding: 2rem;
+}
+
+/* BLOG CARD STYLES */
+.blog-card {
+	background-color: #fefad4;
+	padding: 2rem;
+	margin-top: 2rem;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.blog-img {
+	height: 100px;
+	object-fit: contain;
+	margin-right: 1rem;
+}
+
+.blog-body {
+	padding: 1rem;
+	text-align: left;
+	flex-basis: fill;
+	flex-grow: 1;
+}
+
+.blog-title {
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+}
+
+.blog-title a {
+	text-decoration: none;
+	color: #f1828d;
+	transition: all 0.3s ease-in-out;
+}
+
+.blog-title a:hover {
+	filter: brightness(1.2);
+}
+
+.blog-text {
+	margin-bottom: 2rem;
+}
+
+.blog-link {
+	text-align: center;
+}
+
+.blog-link a {
+	text-decoration: none;
+	color: #f1828d;
+	border: 1px solid #f1828d;
+	padding: 0.5rem 1rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.blog-link a:hover {
+	color: #fefad4;
+	background-color: #f1828d;
+}
+
+/* MUSIC STYLES */
+#music {
+	background-color: #fefad4;
+}
+
+.songs-table {
+	width: 100%;
+	border-spacing: 0;
+	overflow-x: scroll;
+}
+
+.songs-table th {
+	background-color: #765d69;
+	color: #fefad4;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.songs-table th,
+.songs-table td {
+	padding: 0.5rem;
+}
+
+.songs-table tr:nth-of-type(odd) {
+	background-color: #fcd0ba;
+}
+
+.s-no {
+	text-align: right;
+}
+
+.embed {
+	text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 480px) {
+	.blog-card {
+		display: flex;
+		align-items: center;
+	}
+
+	.blog-link {
+		text-align: right;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.blog-card {
+		width: 80%;
+		margin: 2rem auto;
+	}
+}
